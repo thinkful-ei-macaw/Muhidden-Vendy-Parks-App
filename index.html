@@ -7,14 +7,14 @@
 </head>
 <body>
     <div class="container">
-        <h1>Find Parks In States</h1>
+        <h1>Find National Parks In States</h1>
 
         <form id="js-form">
-            <label for="search-term">Select a state</label>
-            <input type="text" name="search-term" id="search-term" placeholder="CA">
+            <label for="search-term">Input state(s)</label>
+            <input type="text" name="search-term" id="search-term" placeholder="e.g NY,CA">
 
-            <label for="max-results">Maximum results to return</label>
-            <input type="number" name="max-results" id="js-max-results" value="10">
+            <label for="max-results">Number of Results to return(max:10)</label>
+            <input type="number" name="max-results" id="js-max-results" max="10">
 
             <input type="submit" value="Go!">
         </form>
@@ -23,6 +23,7 @@
         <section id="results" class="hidden">
           <h2>Search results</h2>
           <ul id="results-list">
+
           </ul>
         </section>
     </div>
